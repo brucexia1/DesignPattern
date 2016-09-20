@@ -18,6 +18,7 @@ aux_source_directory("${CODE_PATH}/main" EXE_SOURCE_LIST)
 link_directories(${EXECUTABLE_OUTPUT_PATH})
 
 SET(TARGET_PATH ${CMAKE_CURRENT_SOURCE_DIR}/build)
+SET(EXECUTABLE_OUTPUT_PATH ${TARGET_PATH})
 
 message("----------  configure ${PROJECT_NAME} ----------")
 add_executable(${PROJECT_NAME} ${EXE_SOURCE_LIST} )
