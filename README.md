@@ -6,7 +6,6 @@ Learning DesignPattern (C++)
   Build & Run:
 
 ```bash
-$ cmake .
-$ make
-$ ./DesignPattern
+$ chmod +x buildRun.sh
+$ ./buildRun.sh
 ```
