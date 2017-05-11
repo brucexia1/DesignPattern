@@ -1,5 +1,5 @@
-#include "Factory.h"
-#include "Product.h"
+#include "Factory.hpp"
+#include "Product.hpp"
 
 #include <iostream>
 using namespace std;

@@ -1,4 +1,4 @@
-#include "Visitor.h"
+#include "Visitor.hpp"
 
 #include <iostream>
 using namespace std;

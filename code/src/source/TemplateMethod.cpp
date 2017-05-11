@@ -1,4 +1,4 @@
-#include "TemplateMethod.h"
+#include "TemplateMethod.hpp"
 
 #include <iostream>
 using namespace std;

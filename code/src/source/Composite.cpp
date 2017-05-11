@@ -1,4 +1,4 @@
-#include "Composite.h"
+#include "Composite.hpp"
 
 
 Compt::Compt(void)

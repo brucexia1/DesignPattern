@@ -1,4 +1,4 @@
-#include "Strategy.h"
+#include "Strategy.hpp"
 
 #include <iostream>
 using namespace std;

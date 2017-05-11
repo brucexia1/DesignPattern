@@ -1,4 +1,4 @@
-#include "Observer.h"
+#include "Observer.hpp"
 
 #include <iostream>
 #include <algorithm>

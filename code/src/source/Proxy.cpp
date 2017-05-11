@@ -1,4 +1,4 @@
-#include "Proxy.h"
+#include "Proxy.hpp"
 
 #include <iostream>
 using namespace std;

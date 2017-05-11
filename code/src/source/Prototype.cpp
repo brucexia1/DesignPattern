@@ -1,4 +1,4 @@
-#include "Prototype.h"
+#include "Prototype.hpp"
 
 #include <iostream>
 using namespace std;

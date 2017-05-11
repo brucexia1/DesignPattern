@@ -1,4 +1,4 @@
-#include "Mediator.h"
+#include "Mediator.hpp"
 
 #include <iostream>
 #include <string>
