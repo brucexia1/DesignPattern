@@ -1,12 +1,11 @@
 #ifndef LFU_H
 #define LFU_H
 
-#include "Memcache.hpp"
 
-class lfu : public MemCache
+class LFU : public MemCache
 {
 public:
-    lfu();
+    LFU();
 };
 
 #endif // LFU_H

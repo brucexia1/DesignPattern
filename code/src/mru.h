@@ -1,12 +1,11 @@
 #ifndef MRU_H
 #define MRU_H
 
-#include "Memcache.hpp"
 
-class mru : public MemCache
+class MRU : public MemCache
 {
 public:
-    mru();
+    MRU();
 };
 
 #endif // MRU_H

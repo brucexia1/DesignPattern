@@ -32,16 +32,16 @@ SOURCES += \
     code/src/source/Visitor.cpp \
     code/src/memcache.cpp \
     code/src/lru.cpp \
-    code/src/mru.cpp \
-    code/src/lfu.cpp
+    code/src/lfu.cpp \
+    code/src/mru.cpp
 
 HEADERS += \
     code/src/include/*.hpp \
     code/src/include/util.hpp \
     code/src/memcache.hpp \
     code/src/lru.h \
-    code/src/mru.h \
-    code/src/lfu.h
+    code/src/lfu.h \
+    code/src/mru.h
 
 INCLUDEPATH += \
     code/src \

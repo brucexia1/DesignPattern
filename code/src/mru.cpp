@@ -1,6 +1,6 @@
 #include "mru.h"
 
-mru::mru()
+MRU::MRU()
 {
 
 }

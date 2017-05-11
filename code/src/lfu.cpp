@@ -1,6 +1,6 @@
 #include "lfu.h"
 
-lfu::lfu()
+LFU::LFU()
 {
 
 }

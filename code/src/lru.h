@@ -1,12 +1,11 @@
 #ifndef LRU_H
 #define LRU_H
 
-#include "Memcache.hpp"
 
-class lru : public MemCache
+class LRU : public MemCache
 {
 public:
-    lru();
+    LRU();
 };
 
 #endif // LRU_H

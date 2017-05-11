@@ -1,6 +1,6 @@
 #include "lru.h"
 
-lru::lru()
+LRU::LRU()
 {
 
 }
