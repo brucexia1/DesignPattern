@@ -30,13 +30,21 @@ SOURCES += \
     code/src/source/Strategy.cpp \
     code/src/source/TemplateMethod.cpp \
     code/src/source/Visitor.cpp \
-    code/src/source/Memcache.cpp
+    code/src/memcache.cpp \
+    code/src/lru.cpp \
+    code/src/mru.cpp \
+    code/src/lfu.cpp
 
 HEADERS += \
     code/src/include/*.hpp \
-    code/src/include/util.hpp
+    code/src/include/util.hpp \
+    code/src/memcache.hpp \
+    code/src/lru.h \
+    code/src/mru.h \
+    code/src/lfu.h
 
 INCLUDEPATH += \
+    code/src \
     code/src/include \
 
 LIBS += \
