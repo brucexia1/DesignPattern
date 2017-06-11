@@ -2,50 +2,50 @@ TEMPLATE = app
 CONFIG += console c++11
 CONFIG -= app_bundle
 CONFIG -= qt
-CONFIG +=c++11
 
 SOURCES += \
-    code/main/main.cpp \
-    code/src/source/Abstraction.cpp \
-    code/src/source/AbstractionImp.cpp \
-    code/src/source/Adapter.cpp \
-    code/src/source/Builder.cpp \
-    code/src/source/Character.cpp \
-    code/src/source/ClassAdapter.cpp \
-    code/src/source/Command.cpp \
-    code/src/source/Composite.cpp \
-    code/src/source/Decorator.cpp \
-    code/src/source/Facade.cpp \
-    code/src/source/Factory.cpp \
-    code/src/source/Handle.cpp \
-    code/src/source/Interpret.cpp \
-    code/src/source/Iterator.cpp \
-    code/src/source/Mediator.cpp \
-    code/src/source/Memento.cpp \
-    code/src/source/Observer.cpp \
-    code/src/source/Product.cpp \
-    code/src/source/Prototype.cpp \
-    code/src/source/Proxy.cpp \
-    code/src/source/Singleton.cpp \
-    code/src/source/Strategy.cpp \
-    code/src/source/TemplateMethod.cpp \
-    code/src/source/Visitor.cpp \
-    code/src/memcache.cpp \
-    code/src/lru.cpp \
-    code/src/lfu.cpp \
-    code/src/mru.cpp
+    src/source/Abstraction.cpp \
+    src/source/AbstractionImp.cpp \
+    src/source/Adapter.cpp \
+    src/source/Builder.cpp \
+    src/source/Character.cpp \
+    src/source/ClassAdapter.cpp \
+    src/source/Command.cpp \
+    src/source/Composite.cpp \
+    src/source/Decorator.cpp \
+    src/source/Facade.cpp \
+    src/source/Factory.cpp \
+    src/source/Handle.cpp \
+    src/source/Interpret.cpp \
+    src/source/Iterator.cpp \
+    src/source/Mediator.cpp \
+    src/source/Memento.cpp \
+    src/source/Observer.cpp \
+    src/source/Product.cpp \
+    src/source/Prototype.cpp \
+    src/source/Proxy.cpp \
+    src/source/Singleton.cpp \
+    src/source/Strategy.cpp \
+    src/source/TemplateMethod.cpp \
+    src/source/Visitor.cpp \
+    src/memcache.cpp \
+    src/lru.cpp \
+    src/mru.cpp \
+    src/lfu.cpp \
+    test/main.cpp \
 
 HEADERS += \
-    code/src/include/*.hpp \
-    code/src/include/util.hpp \
-    code/src/lru.h \
-    code/src/lfu.h \
-    code/src/mru.h \
-    code/src/memcache.h
+    src/include/*.hpp \
+    src/*.h \
 
 INCLUDEPATH += \
-    code/src \
-    code/src/include \
+    src \
+    src/include \
 
 LIBS += \
 
+
+unix:!macx: LIBS += -L$$PWD/3rdlib/googletest/build_mingw32/lib/ -lgmock -lgmock_main -lgtest -lgtest_main
+
+INCLUDEPATH += $$PWD/3rdlib/googletest/build_mingw32/include
+DEPENDPATH += $$PWD/3rdlib/googletest/build_mingw32/include

@@ -1,0 +1,16 @@
+﻿Build started 5/13/2017 00:29:37.
+     1>Project "D:\project\googletest\googletest\msvc\gtest_unittest.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I.. /I..\include /Zi /nologo /W3 /WX- /O1 /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _MBCS /Gm /EHsc /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"gtest/Debug\gtest_unittest\\" /Fd"gtest/Debug\gtest_unittest\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt ..\test\gtest_unittest.cc
+         gtest_unittest.cc
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"gtest/Debug\gtest_unittest.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"gtest/Debug\gtest_unittest.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"gtest/Debug\gtest_unittest.lib" /MACHINE:X86 /SAFESEH gtest/Debug\gtest_unittest\gtest_unittest.obj
+         D:\project\googletest\googletest\msvc\gtest\Debug\gtestd.lib
+         D:\project\googletest\googletest\msvc\gtest\Debug\gtest_maind.lib
+     1>gtestd.lib(gtest-all.obj) : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+         gtest_unittest.vcxproj -> D:\project\googletest\googletest\msvc\gtest/Debug\gtest_unittest.exe
+     1>Done Building Project "D:\project\googletest\googletest\msvc\gtest_unittest.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:28.61
