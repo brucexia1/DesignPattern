@@ -33,6 +33,8 @@ SOURCES += \
     src/mru.cpp \
     src/lfu.cpp \
     test/main.cpp \
+    test/lrutest.cpp \
+    test/designtest.cpp
 
 HEADERS += \
     src/include/*.hpp \
@@ -42,10 +44,13 @@ INCLUDEPATH += \
     src \
     src/include \
 
+
 LIBS += \
+    -L$$PWD/3rdlib/gtest/buildmingw32/lib/ -lgtest \
+    -L$$PWD/3rdlib/gtest/buildmingw32/lib/ -lgmock
 
-
-unix:!macx: LIBS += -L$$PWD/3rdlib/googletest/build_mingw32/lib/ -lgmock -lgmock_main -lgtest -lgtest_main
-
-INCLUDEPATH += $$PWD/3rdlib/googletest/build_mingw32/include
-DEPENDPATH += $$PWD/3rdlib/googletest/build_mingw32/include
+INCLUDEPATH += $$PWD/3rdlib/gtest/buildmingw32/include
+DEPENDPATH += $$PWD/3rdlib/gtest/buildmingw32/include
+PRE_TARGETDEPS += \
+    $$PWD/3rdlib/gtest/buildmingw32/lib/libgtest.a \
+    $$PWD/3rdlib/gtest/buildmingw32/lib/libgmock.a

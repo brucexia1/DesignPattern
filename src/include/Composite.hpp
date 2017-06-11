@@ -6,7 +6,10 @@
 #include <iterator>
 
 using namespace std;
+
+#ifndef NULL
 #define NULL 0
+#endif
 
 
 class Compt
@@ -15,9 +18,9 @@ public:
 	Compt(void);
 	virtual ~Compt(void);
 	virtual void Operation() = 0;
-	virtual void Add(Compt *) {return;};
-	virtual void Remove(Compt *) {return;};
-	virtual Compt * GetChild(int) {return NULL;};
+    virtual void Add(Compt *) {return;}
+    virtual void Remove(Compt *) {return;}
+    virtual Compt * GetChild(int) {return NULL;}
 };
 
 class Leaf:public Compt 

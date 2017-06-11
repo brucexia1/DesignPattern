@@ -1,6 +1,8 @@
 #pragma once
 
+#ifndef NULL
 #define NULL 0
+#endif
 
 // 定义了Proxy和ConcreteSubject的公有接口,
 // 这样就可以在任何需要使用到ConcreteSubject的地方都使用Proxy.
