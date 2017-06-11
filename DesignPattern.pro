@@ -4,45 +4,56 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += \
-    src/source/Abstraction.cpp \
-    src/source/AbstractionImp.cpp \
-    src/source/Adapter.cpp \
-    src/source/Builder.cpp \
-    src/source/Character.cpp \
-    src/source/ClassAdapter.cpp \
-    src/source/Command.cpp \
-    src/source/Composite.cpp \
-    src/source/Decorator.cpp \
-    src/source/Facade.cpp \
-    src/source/Factory.cpp \
-    src/source/Handle.cpp \
-    src/source/Interpret.cpp \
-    src/source/Iterator.cpp \
-    src/source/Mediator.cpp \
-    src/source/Memento.cpp \
-    src/source/Observer.cpp \
-    src/source/Product.cpp \
-    src/source/Prototype.cpp \
-    src/source/Proxy.cpp \
-    src/source/Singleton.cpp \
-    src/source/Strategy.cpp \
-    src/source/TemplateMethod.cpp \
-    src/source/Visitor.cpp \
-    src/memcache.cpp \
-    src/lru.cpp \
-    src/mru.cpp \
-    src/lfu.cpp \
+    src/designpattern/Abstraction.cpp \
+    src/designpattern/AbstractionImp.cpp \
+    src/designpattern/Adapter.cpp \
+    src/designpattern/Builder.cpp \
+    src/designpattern/Character.cpp \
+    src/designpattern/ClassAdapter.cpp \
+    src/designpattern/Command.cpp \
+    src/designpattern/Composite.cpp \
+    src/designpattern/Decorator.cpp \
+    src/designpattern/Facade.cpp \
+    src/designpattern/Factory.cpp \
+    src/designpattern/Handle.cpp \
+    src/designpattern/Interpret.cpp \
+    src/designpattern/Iterator.cpp \
+    src/designpattern/Mediator.cpp \
+    src/designpattern/Memento.cpp \
+    src/designpattern/Observer.cpp \
+    src/designpattern/Product.cpp \
+    src/designpattern/Prototype.cpp \
+    src/designpattern/Proxy.cpp \
+    src/designpattern/Singleton.cpp \
+    src/designpattern/Strategy.cpp \
+    src/designpattern/TemplateMethod.cpp \
+    src/designpattern/Visitor.cpp \
+    src/algorithm/demo.cpp \
+    src/algorithm/graph.cpp \
+    src/algorithm/tree.cpp \
+    src/algorithm/xsSort.cpp \
+    src/algorithm/xsSearch.cpp \
+    src/other/memcache.cpp \
+    src/other/lru.cpp \
+    src/other/mru.cpp \
+    src/other/lfu.cpp \
     test/main.cpp \
     test/lrutest.cpp \
-    test/designtest.cpp
+    test/designtest.cpp \
+    test/myalg.cpp \
+    test/testlibrary.cpp \
 
 HEADERS += \
-    src/include/*.hpp \
-    src/*.h \
+    src/designpattern/*.hpp \
+    src/algorithm/*.h \
+    src/other/*.h \
+    test/*.h \
 
 INCLUDEPATH += \
-    src \
-    src/include \
+    src/designpattern \
+    src/algorithm \
+    src/other \
+    test \
 
 
 LIBS += \
