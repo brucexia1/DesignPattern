@@ -31,16 +31,18 @@
 #include <iostream>
 using namespace std;
 
-//ProduceProduct函数并不能通过传输的工厂参数具体要创建哪个产品
-//具体创建哪个产品直到运行时动态传入相应产品的工厂类对象来生产
-//即父类Factory并不知道具体传入的哪一个子类，直到运行时动态决定
+/*
+ * ProduceProduct函数并不能通过传输的工厂参数具体要创建哪个产品
+ * 具体创建哪个产品直到运行时动态传入相应产品的工厂类对象来生产
+ * 即父类Factory并不知道具体传入的哪一个子类，直到运行时动态决定
+ */
 void ProduceProduct(AbstractFactory *fac)
 {
     AbstractProductPen *pen = fac->CreateProductPen();
     AbstractProductBook *book = fac->CreateProductBook();
 }
 
-TEST(designtest, one)
+TEST(designtest, create_pattern)
 {
     /************************************************\
                        创建型模式
@@ -73,8 +75,10 @@ TEST(designtest, one)
     cout<< "------------------------" << endl;
     delete p3;
     delete p4;
+}
 
-
+TEST(designtest, struct_pattern)
+{
     /************************************************\
                         结构型模式
     \************************************************/
@@ -139,8 +143,10 @@ TEST(designtest, one)
     /***********    代理模式（Proxy Pattern）    ************/
     Proxy* proxy = new Proxy();
     proxy->Request();
+}
 
-
+TEST(designtest, action_pattern)
+{
     /************************************************\
                         行为型模式
     \************************************************/
@@ -246,6 +252,4 @@ TEST(designtest, one)
     AbstractExpression* te  = new TerminalExpression("hello");
     AbstractExpression*  nte  =  new NonterminalExpression(te,2);
     nte->Interpret(*c);
-
-    printf("point size %d.\n", sizeof(int *));
 }
