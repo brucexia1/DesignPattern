@@ -1,19 +1,19 @@
 #pragma once
+
 class AbstractProductPen
 {
 public:
-	virtual ~AbstractProductPen(void) = 0;
+    virtual ~AbstractProductPen(void) {}
 protected:
-	AbstractProductPen(void);
+    AbstractProductPen(void) {}
 private:
 };
-
 class AbstractProductBook
 {
 public:
-	virtual ~AbstractProductBook(void) = 0;
+    virtual ~AbstractProductBook(void) {}
 protected:
-	AbstractProductBook(void);
+    AbstractProductBook(void) {}
 private:
 };
 

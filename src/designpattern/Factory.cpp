@@ -4,20 +4,13 @@
 #include <iostream>
 using namespace std;
 
-AbstractFactory::AbstractFactory(void)
-{
-}
-AbstractFactory::~AbstractFactory(void)
-{
-}
-
-
 FactoryRed::FactoryRed() 
 {
-	cout<<"FactoryRed....."<<endl; 
+    cout<<"enter FactoryRed"<<endl;
 } 
 FactoryRed::~FactoryRed() 
 {
+    cout<<"leave FactoryRed"<<endl;
 }
 AbstractProductPen* FactoryRed::CreateProductPen() 
 {
@@ -30,10 +23,11 @@ AbstractProductBook* FactoryRed::CreateProductBook()
 
 FactoryGreen::FactoryGreen() 
 {
-	cout<<"FactoryGreen....."<<endl; 
+    cout<<"enter FactoryGreen"<<endl;
 }
 FactoryGreen::~FactoryGreen() 
 {
+    cout<<"leave FactoryGreen"<<endl;
 }
 AbstractProductPen* FactoryGreen::CreateProductPen() 
 {

@@ -3,49 +3,39 @@
 #include <iostream>
 using namespace std;
 
-AbstractProductPen::AbstractProductPen(void)
-{
-}
-AbstractProductPen::~AbstractProductPen(void)
-{
-}
-
-AbstractProductBook::AbstractProductBook(void)
-{
-}
-AbstractProductBook::~AbstractProductBook(void)
-{
-}
-
 ProductPenRed::ProductPenRed()
 { 
-	cout<<"ProductPenRed...."<<endl; 
+    cout<<"enter ProductPenRed...."<<endl;
 }
 ProductPenRed::~ProductPenRed()
 {
+    cout<<"leave ProductPenRed...."<<endl;
 }
 
-ProductPenGreen::~ProductPenGreen()
-{
-}
 ProductPenGreen::ProductPenGreen()
 {
-	cout<<"ProductPenGreen..."<<endl;
+    cout<<"enter ProductPenGreen..."<<endl;
+}
+ProductPenGreen::~ProductPenGreen()
+{
+    cout<<"leave ProductPenGreen..."<<endl;
 }
 
 
 ProductBookGreen::~ProductBookGreen()
 {
+    cout<<"leave ProductBookGreen..."<<endl;
 }
 ProductBookGreen::ProductBookGreen()
 {
-	cout<<"ProductBookGreen..."<<endl;
+    cout<<"enter ProductBookGreen..."<<endl;
 }
 
 ProductBookRed::~ProductBookRed()
 {
+    cout<<"leave ProductBookRed..."<<endl;
 }
 ProductBookRed::ProductBookRed()
 {
-	cout<<"ProductBookRed..."<<endl;
+    cout<<"enter ProductBookRed..."<<endl;
 }

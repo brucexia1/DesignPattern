@@ -40,6 +40,8 @@ void ProduceProduct(AbstractFactory *fac)
 {
     AbstractProductPen *pen = fac->CreateProductPen();
     AbstractProductBook *book = fac->CreateProductBook();
+    delete pen;
+    delete book;
 }
 
 TEST(designtest, create_pattern)
@@ -48,8 +50,12 @@ TEST(designtest, create_pattern)
                        创建型模式
     \************************************************/
     /***********    Factory Pattern    ************/
-    ProduceProduct( new FactoryRed() );
-    ProduceProduct( new FactoryGreen() );
+    FactoryRed *fr = new FactoryRed();
+    FactoryGreen *fg = new FactoryGreen();
+    ProduceProduct( fr );
+    ProduceProduct( fg );
+    delete fr;
+    delete fg;
 
     /***********    Singleton Pattern    ************/
     Singleton *sgn = Singleton::GetInstance();
