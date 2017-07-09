@@ -1,6 +1,6 @@
 #pragma once
 
-//ÊµÏÖÀà
+//å®ç°ç±»
 class AbstractionImp
 {
 public:

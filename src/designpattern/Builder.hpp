@@ -5,7 +5,7 @@
 using namespace std;
 
 
-//²úÆ·Àà
+//äº§å“ç±»
 class BldProduct
 {
 private:
@@ -23,7 +23,7 @@ public:
 
 
 
-//³éÏóBuilder»ùÀà£¬¶¨Òå²»Í¬²¿·ÖµÄ´´½¨½Ó¿Ú
+//æŠ½è±¡BuilderåŸºç±»ï¼Œå®šä¹‰ä¸åŒéƒ¨åˆ†çš„åˆ›å»ºæ¥å£
 class Builder
 {
 public:
@@ -38,7 +38,7 @@ public:
 
 
 
-//  BuilderµÄÅÉÉúÀà,ÊµÏÖBuilderPartAºÍBuilderPartBºÍBuildPartC½Ó¿Úº¯Êı 
+//  Builderçš„æ´¾ç”Ÿç±»,å®ç°BuilderPartAå’ŒBuilderPartBå’ŒBuildPartCæ¥å£å‡½æ•° 
 class ConcreteBuilder1:public Builder
 {
 public:
@@ -52,7 +52,7 @@ private:
     BldProduct* m_pProduct;
 };
 
-//  BuilderµÄÅÉÉúÀà,ÊµÏÖBuilderPartAºÍBuilderPartBºÍBuildPartC½Ó¿Úº¯Êı 
+//  Builderçš„æ´¾ç”Ÿç±»,å®ç°BuilderPartAå’ŒBuilderPartBå’ŒBuildPartCæ¥å£å‡½æ•° 
 class ConcreteBuilder2:public Builder
 {
 public:
@@ -70,16 +70,16 @@ private:
 
 
 
- // Ê¹ÓÃBuilder¹¹½¨²úÆ·,¹¹½¨²úÆ·µÄ¹ı³Ì¶¼Ò»ÖÂ,µ«ÊÇ²»Í¬µÄbuilderÓĞ²»Í¬µÄÊµÏÖ
- // Õâ¸ö²»Í¬µÄÊµÏÖÍ¨¹ı²»Í¬µÄBuilderÅÉÉúÀàÀ´ÊµÏÖ,´æÓĞÒ»¸öBuilderµÄÖ¸Õë,Í¨¹ıÕâ¸öÀ´ÊµÏÖ¶àÌ¬µ÷ÓÃ 
+ // ä½¿ç”¨Builderæ„å»ºäº§å“,æ„å»ºäº§å“çš„è¿‡ç¨‹éƒ½ä¸€è‡´,ä½†æ˜¯ä¸åŒçš„builderæœ‰ä¸åŒçš„å®ç°
+ // è¿™ä¸ªä¸åŒçš„å®ç°é€šè¿‡ä¸åŒçš„Builderæ´¾ç”Ÿç±»æ¥å®ç°,å­˜æœ‰ä¸€ä¸ªBuilderçš„æŒ‡é’ˆ,é€šè¿‡è¿™ä¸ªæ¥å®ç°å¤šæ€è°ƒç”¨ 
 class Director
 {
 public:
     Director(Builder* pBuilder);
     ~Director();
 
-    //Constructº¯Êı¶¨ÒåÒ»¸ö¶ÔÏóµÄÕû¸ö¹¹½¨¹ı³Ì,²»Í¬µÄ²¿·ÖÖ®¼äµÄ×°Åä·½Ê½¶¼ÊÇÒ»ÖÂµÄ,
-    //Ê×ÏÈ¹¹½¨PartAÆä´ÎÊÇPartB,Ö»ÊÇ¸ù¾İ²»Í¬µÄ¹¹½¨Õß»áÓĞ²»Í¬µÄ±íÊ¾ 
+    //Constructå‡½æ•°å®šä¹‰ä¸€ä¸ªå¯¹è±¡çš„æ•´ä¸ªæ„å»ºè¿‡ç¨‹,ä¸åŒçš„éƒ¨åˆ†ä¹‹é—´çš„è£…é…æ–¹å¼éƒ½æ˜¯ä¸€è‡´çš„,
+    //é¦–å…ˆæ„å»ºPartAå…¶æ¬¡æ˜¯PartB,åªæ˜¯æ ¹æ®ä¸åŒçš„æ„å»ºè€…ä¼šæœ‰ä¸åŒçš„è¡¨ç¤º 
     void Construct();
     //void Construct(const string& buildPara);
 private:

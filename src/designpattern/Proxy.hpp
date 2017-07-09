@@ -4,8 +4,8 @@
 #define NULL 0
 #endif
 
-// ¶¨ÒåÁËProxyºÍConcreteSubjectµÄ¹«ÓĞ½Ó¿Ú,
-// ÕâÑù¾Í¿ÉÒÔÔÚÈÎºÎĞèÒªÊ¹ÓÃµ½ConcreteSubjectµÄµØ·½¶¼Ê¹ÓÃProxy.
+// å®šä¹‰äº†Proxyå’ŒConcreteSubjectçš„å…¬æœ‰æ¥å£,
+// è¿™æ ·å°±å¯ä»¥åœ¨ä»»ä½•éœ€è¦ä½¿ç”¨åˆ°ConcreteSubjectçš„åœ°æ–¹éƒ½ä½¿ç”¨Proxy.
 class Subject 
 {
 public: 
@@ -22,7 +22,7 @@ public:
 	void Request();
 };
 
-//¶¨Òå´úÀíÀà
+//å®šä¹‰ä»£ç†ç±»
 class Proxy : public Subject
 {
 public:

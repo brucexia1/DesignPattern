@@ -2,7 +2,7 @@
 
 class AbstractionImp;
 
-//³éÏóÀà
+//æŠ½è±¡ç±»
 class Abstraction
 {
 public:

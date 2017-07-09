@@ -48,7 +48,7 @@ void Proxy::Request()
 	if(NULL == m_sub){
         m_sub = new ConcreteSubject();
     }
-    DoSomething1();		//��ʾ���⸽�ӵĲ��� 
-    m_sub->Request();	//������ʵ�������
-    DoSomething2();		//��ʾ���⸽�ӵĲ���
+    DoSomething1();		//表示额外附加的操作 
+    m_sub->Request();	//代理的实体类操作
+    DoSomething2();		//表示额外附加的操作
 }

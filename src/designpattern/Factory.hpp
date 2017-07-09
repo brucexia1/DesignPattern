@@ -8,7 +8,7 @@ class AbstractFactory
 public:
 	virtual ~AbstractFactory(void) = 0;
 
-	//工厂Factory提供的创建产品对象的接口，接口所在类都是抽象类，具体实现在子类中实现
+	//宸ュ巶Factory鎻愪緵鐨勫垱寤轰骇鍝佸璞＄殑鎺ュ彛锛屾帴鍙ｆ墍鍦ㄧ被閮芥槸鎶借薄绫伙紝鍏蜂綋瀹炵幇鍦ㄥ瓙绫讳腑瀹炵幇
 	virtual AbstractProductPen *CreateProductPen() = 0;
 	virtual AbstractProductBook *CreateProductBook() = 0;
 

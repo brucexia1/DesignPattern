@@ -8,22 +8,22 @@ protected:
 	Prototype(void);
 };
 
-//ÅÉÉú×ÔPrototype£¬ÊµÏÖÆä½Ó¿Úº¯Êı
+//æ´¾ç”Ÿè‡ªPrototypeï¼Œå®ç°å…¶æ¥å£å‡½æ•°
 class ConcretePrototype1:public Prototype
 {
 public:
-    ConcretePrototype1();//¹¹Ôìº¯Êı
-    ~ConcretePrototype1();//Îö¹¹º¯Êı
-    ConcretePrototype1(const ConcretePrototype1&);//¿½±´¹¹Ôìº¯Êı
-    virtual Prototype* Clone() const;//ÊµÏÖ»ùÀà¶¨ÒåµÄClone½Ó¿Ú£¬ÄÚ²¿µ÷ÓÃ¿½±´¹¹Ôìº¯ÊıÊµÏÖ¸´ÖÆ¹¦ÄÜ
+    ConcretePrototype1();
+    ~ConcretePrototype1();
+    ConcretePrototype1(const ConcretePrototype1&);//æ‹·è´æ„é€ å‡½æ•°
+    virtual Prototype* Clone() const;//å®ç°åŸºç±»å®šä¹‰çš„Cloneæ¥å£ï¼Œå†…éƒ¨è°ƒç”¨æ‹·è´æ„é€ å‡½æ•°å®ç°å¤åˆ¶åŠŸèƒ½
 };
 
-//ÅÉÉú×ÔPrototype£¬ÊµÏÖÆä½Ó¿Úº¯Êı
+//æ´¾ç”Ÿè‡ªPrototypeï¼Œå®ç°å…¶æ¥å£å‡½æ•°
 class ConcretePrototype2:public Prototype
 {
 public:
-    ConcretePrototype2();//¹¹Ôìº¯Êı
-    ~ConcretePrototype2();//Îö¹¹º¯Êı
-    ConcretePrototype2(const ConcretePrototype2&);//¿½±´¹¹Ôìº¯Êı
-    virtual Prototype* Clone() const;//ÊµÏÖ»ùÀà¶¨ÒåµÄClone½Ó¿Ú£¬ÄÚ²¿µ÷ÓÃ¿½±´¹¹Ôìº¯ÊıÊµÏÖ¸´ÖÆ¹¦ÄÜ
+    ConcretePrototype2();//æ„é€ å‡½æ•°
+    ~ConcretePrototype2();//ææ„å‡½æ•°
+    ConcretePrototype2(const ConcretePrototype2&);//æ‹·è´æ„é€ å‡½æ•°
+    virtual Prototype* Clone() const;//å®ç°åŸºç±»å®šä¹‰çš„Cloneæ¥å£ï¼Œå†…éƒ¨è°ƒç”¨æ‹·è´æ„é€ å‡½æ•°å®ç°å¤åˆ¶åŠŸèƒ½
 };

@@ -27,7 +27,7 @@ void CharacterA::SetSize(int nWeight, int nHeight)
 }  
 void CharacterA::Display()  
 {  
-    cout << "CharacterA£º" << m_chSymbol << "(" << m_nWeight << "," << m_nHeight << ")" << endl;  
+    cout << "CharacterAï¼š" << m_chSymbol << "(" << m_nWeight << "," << m_nHeight << ")" << endl;  
 }
 
 CharacterB::CharacterB()  
@@ -46,7 +46,7 @@ void CharacterB::SetSize(int nWeight, int nHeight)
 }
 void CharacterB::Display()  
 {
-    cout << "CharacterB£º" << m_chSymbol << "(" << m_nWeight << "," << m_nHeight << ")" << endl;  
+    cout << "CharacterBï¼š" << m_chSymbol << "(" << m_nWeight << "," << m_nHeight << ")" << endl;  
 }
 
 

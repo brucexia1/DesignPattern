@@ -40,12 +40,12 @@ void ConcreteHandleA::HandleRequest()
 { 
 	if (GetSuccessor() != 0) 
 	{
-		cout<<"ConcreteHandleA  ÎÒ°Ñ´¦ÀíÈ¨¸øºó¼Ì½Úµã....."<<endl; 
+		cout<<"ConcreteHandleA  æˆ‘æŠŠå¤„ç†æƒç»™åŽç»§èŠ‚ç‚¹....."<<endl; 
 		GetSuccessor()->HandleRequest(); 
 	} 
 	else 
 	{ 
-		cout<<"ConcreteHandleA  Ã»ÓÐºó¼ÌÁË£¬ÎÒ±ØÐë×Ô¼º´¦Àí...."<<endl; 
+		cout<<"ConcreteHandleA  æ²¡æœ‰åŽç»§äº†ï¼Œæˆ‘å¿…é¡»è‡ªå·±å¤„ç†...."<<endl; 
 	} 
 }
 
@@ -63,11 +63,11 @@ void ConcreteHandleB::HandleRequest()
 {
 	if (GetSuccessor() != 0) 
 	{
-		cout<<"ConcreteHandleB  ÎÒ°Ñ´¦ÀíÈ¨¸øºó¼Ì½Úµã....."<<endl; 
+		cout<<"ConcreteHandleB  æˆ‘æŠŠå¤„ç†æƒç»™åŽç»§èŠ‚ç‚¹....."<<endl; 
 		GetSuccessor()->HandleRequest(); 
 	}
 	else 
 	{
-		cout<<"ConcreteHandleB  Ã»ÓÐºó¼ÌÁË£¬ÎÒ±ØÐë×Ô¼º´¦Àí...."<<endl; 
+		cout<<"ConcreteHandleB  æ²¡æœ‰åŽç»§äº†ï¼Œæˆ‘å¿…é¡»è‡ªå·±å¤„ç†...."<<endl; 
 	}
 } 

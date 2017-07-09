@@ -1,9 +1,9 @@
 #pragma once
 
 /************\
-½«ÇëÇóµÄ½ÓÊÕÕß£¨´¦ÀíÕß£©·Åµ½ Command µÄ¾ßÌå×ÓÀàConcreteCommand ÖĞ£¬
-µ±ÇëÇóµ½À´Ê±£¨Invoker ·¢³ö Invoke ÏûÏ¢¼¤»î Command ¶ÔÏó£© £¬
-ConcreteCommand ½«´¦ÀíÇëÇó½»¸ø Receiver¶ÔÏó½øĞĞ´¦Àí¡£
+å°†è¯·æ±‚çš„æ¥æ”¶è€…ï¼ˆå¤„ç†è€…ï¼‰æ”¾åˆ° Command çš„å…·ä½“å­ç±»ConcreteCommand ä¸­ï¼Œ
+å½“è¯·æ±‚åˆ°æ¥æ—¶ï¼ˆInvoker å‘å‡º Invoke æ¶ˆæ¯æ¿€æ´» Command å¯¹è±¡ï¼‰ ï¼Œ
+ConcreteCommand å°†å¤„ç†è¯·æ±‚äº¤ç»™ Receiverå¯¹è±¡è¿›è¡Œå¤„ç†ã€‚
 \************/
 
 class Command

@@ -1,13 +1,13 @@
 #pragma once
 
-//³éÏóÄ£°å£¬²¢¶¨ÒåÁËÒ»¸öÄ£°å·½·¨¡£
+//æŠ½è±¡æ¨¡æ¿ï¼Œå¹¶å®šä¹‰äº†ä¸€ä¸ªæ¨¡æ¿æ–¹æ³•ã€‚
 class AbstractClass
 {
 public:
     ~AbstractClass();
-    //¾ßÌåµÄÄ£°å·½·¨£¬¸ø³öÁËÂß¼­µÄ¹Ç¼Ü£¬¶øÂß¼­µÄ×é³ÉÊÇÒ»Ğ©ÏàÓ¦µÄ³éÏó²Ù×÷£¬ËüÃÇ¶¼ÍÆ³Ùµ½×ÓÀàÖĞÊµÏÖ
+    //å…·ä½“çš„æ¨¡æ¿æ–¹æ³•ï¼Œç»™å‡ºäº†é€»è¾‘çš„éª¨æ¶ï¼Œè€Œé€»è¾‘çš„ç»„æˆæ˜¯ä¸€äº›ç›¸åº”çš„æŠ½è±¡æ“ä½œï¼Œå®ƒä»¬éƒ½æ¨è¿Ÿåˆ°å­ç±»ä¸­å®ç°
     void TemplateMethod();
-    //Ò»Ğ©³éÏóĞĞÎª£¬·Åµ½×ÓÀàÖĞÈ¥ÊµÏÖ
+    //ä¸€äº›æŠ½è±¡è¡Œä¸ºï¼Œæ”¾åˆ°å­ç±»ä¸­å»å®ç°
     virtual void PrimitiveOperation1()=0;
     virtual void PrimitiveOperation2()=0;
 protected:
@@ -15,25 +15,25 @@ protected:
 };
 
 
-//ÊµÏÖ»ùÀàËù¶¨ÒåµÄ³éÏó·½·¨
+//å®ç°åŸºç±»æ‰€å®šä¹‰çš„æŠ½è±¡æ–¹æ³•
 class ConcreteClassA : public AbstractClass
 {
 public:
     ConcreteClassA();
     ~ConcreteClassA();
-    //ÊµÏÖ»ùÀà¶¨ÒåµÄ³éÏóĞĞÎª
+    //å®ç°åŸºç±»å®šä¹‰çš„æŠ½è±¡è¡Œä¸º
     virtual void PrimitiveOperation1();
     virtual void PrimitiveOperation2();
 private:
 };
 
-//ÊµÏÖ»ùÀàËù¶¨ÒåµÄ³éÏó·½·¨
+//å®ç°åŸºç±»æ‰€å®šä¹‰çš„æŠ½è±¡æ–¹æ³•
 class ConcreteClassB : public AbstractClass
 {
 public:
     ConcreteClassB();
     ~ConcreteClassB();
-    //ÊµÏÖ»ùÀà¶¨ÒåµÄ³éÏóĞĞÎª
+    //å®ç°åŸºç±»å®šä¹‰çš„æŠ½è±¡è¡Œä¸º
     virtual void PrimitiveOperation1();
     virtual void PrimitiveOperation2();
 private:
