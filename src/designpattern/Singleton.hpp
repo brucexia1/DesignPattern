@@ -1,11 +1,11 @@
 #pragma once
-
+#include <iostream>
 
 class Singleton
 {
 public:
 	static Singleton *GetInstance();
-	~Singleton(void);
+    ~Singleton(void) {std::cout<<"leave Singleton"<<std::endl;}
 
 protected:
 	

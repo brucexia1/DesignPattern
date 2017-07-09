@@ -3,28 +3,18 @@
 #include <iostream>
 using namespace std;
 
-#ifndef NULL
-#define NULL 0
-#endif
 
-Singleton *Singleton::pInstance = NULL;
+Singleton *Singleton::pInstance = 0;
 
 Singleton::Singleton(void)
 {
-	cout<<"Singleton"<<endl;
-}
-
-Singleton::~Singleton(void)
-{
-	if(pInstance){
-		delete pInstance;
-		pInstance = NULL;
-	}
+    cout<<"enter Singleton"<<endl;
 }
 
 Singleton* Singleton::GetInstance()
 {
-	if (NULL == pInstance){
+    if (!pInstance){
+        cout<<"create Singleton"<<endl;
 		pInstance = new Singleton();
 	}
 	return pInstance;

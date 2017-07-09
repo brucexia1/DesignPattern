@@ -59,6 +59,7 @@ TEST(designtest, create_pattern)
 
     /***********    Singleton Pattern    ************/
     Singleton *sgn = Singleton::GetInstance();
+    delete sgn;
 
     /***********    Builder Pattern 生成器模式    ************/
     Director* pDirector = new Director(new ConcreteBuilder1());
@@ -74,11 +75,8 @@ TEST(designtest, create_pattern)
     cout<< "------------------------" << endl;
     Prototype* p3 = new ConcretePrototype2();
     Prototype* p4 = p3->Clone();
-
-    cout<< "------------------------" << endl;
     delete p1;
     delete p2;
-    cout<< "------------------------" << endl;
     delete p3;
     delete p4;
 }
